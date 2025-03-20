@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imovies</title>
+    <!-- FONTS -->
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">imovies</a>
+        <ul class="nav">
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="#">Adultos</a></li>
+            <li><a href="#">Infantil</a></li>
+            <li><a href="#">Meus favoritos</a></li>
+        </ul>
+        <div class="pesquisa">
+             <input type="text" placeholder="pesquisa">
+             <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="container  the-little-mermaid active">
+            <img src="/imagens/the-little-mermaid-title.png" alt="" class="movie-titulo">
+            <h4><span>2023</span><span><i>12+</i></span><span>2h 14 min</span><span>romance</span></h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quis culpa ipsum offi</p>
+            <div class="botao">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"> Assistir</i></a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"> Minha Lista</i></a>
+            </div>
+        </div>
+        <div class="container bg-65">
+            <img src="/imagens/the-65-title.png" alt="">
+        </div>
+        <div class="container the-covenant">
+            <img src="/imagens/the-black-demon-title.png" alt="">
+        </div>
+        <div class="container the-black-demon">
+            <img src="/imagens/the-covenant-title.png" alt="">
+        </div>       
+        <div class="container the-tank">
+            <img src="/imagens/the-tank-title.png" alt="">
+        </div>
+        <div class="carousel-box">
+                <div class="carousel">
+                    <div class="carousel-item"
+                    onclick="changeBg('bg-the-little-mermaid-title')">
+                        <img src="/imagens/movies/the-little-mermaid.jpeg" alt="">
+                    </div>
+                    <div class="carousel-item" onclick="changeBg('bg-65.jpeg', 'bg65');">
+                        <img src="/imagens/movies/65.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" onclick="changeBg('bg-the-convenant.jpeg', 'the-covenant');">
+                        <img src="/imagens/movies/the-covenant.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" onclick="changeBg('bg-the-the-black-demon.jpeg', 'the-the-black-demon');">
+                        <img src="/imagens/movies/the-black-demon.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" onclick="changeBg('bg-the-tank.jpeg', 'the-tank');">
+                        <img src="/imagens/movies/the-tank.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="play"><i class="fa fa-play-circle" aria-hidden="true">Assista o Trailer</i></a>
+            <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i>
+            </a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+            </a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/scripts/script.js"></script>
+<script>
+    $(document).ready(function () {
+           $('.carousel').carousel();
+    });
+</script>
+</body>
+</html>
