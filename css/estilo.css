@@ -92,7 +92,7 @@ header{
     border-right: 1px solid white;
 }
 
-.banner{
+.banner {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -104,7 +104,7 @@ header{
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    transform: 0.5s;
+    transition: background 0.5s ease; /* Adiciona uma transição suave */
 }
 
 .banner::before{

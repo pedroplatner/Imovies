@@ -24,43 +24,33 @@
         </div>
     </header>
     <div class="banner">
-        <div class="container  the-little-mermaid active">
+        <div class="container the-little-mermaid active">
             <img src="/imagens/the-little-mermaid-title.png" alt="" class="movie-titulo">
-            <h4><span>2023</span><span><i>12+</i></span><span>2h 14 min</span><span>romance</span></h4>
+            <h4><span>2023</span><span><i>12+</i></span><span class="movie-duration">2h 15min</span><span class="movie-genre">Animação, Fantasia</span></h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quis culpa ipsum offi</p>
             <div class="botao">
                 <a href="#"><i class="fa fa-play" aria-hidden="true"> Assistir</i></a>
                 <a href="#"><i class="fa fa-plus" aria-hidden="true"> Minha Lista</i></a>
             </div>
         </div>
-        <div class="container bg-65">
-            <img src="/imagens/the-65-title.png" alt="">
+        <div class="container 65">  
         </div>
-        <div class="container the-covenant">
-            <img src="/imagens/the-black-demon-title.png" alt="">
-        </div>
-        <div class="container the-black-demon">
-            <img src="/imagens/the-covenant-title.png" alt="">
-        </div>       
-        <div class="container the-tank">
-            <img src="/imagens/the-tank-title.png" alt="">
-        </div>
+
         <div class="carousel-box">
                 <div class="carousel">
-                    <div class="carousel-item"
-                    onclick="changeBg('bg-the-little-mermaid-title')">
+                    <div class="carousel-item">
                         <img src="/imagens/movies/the-little-mermaid.jpeg" alt="">
                     </div>
-                    <div class="carousel-item" onclick="changeBg('bg-65.jpeg', 'bg65');">
+                    <div class="carousel-item">
                         <img src="/imagens/movies/65.jpg" alt="">
                     </div>
-                    <div class="carousel-item" onclick="changeBg('bg-the-convenant.jpeg', 'the-covenant');">
+                    <div class="carousel-item">
                         <img src="/imagens/movies/the-covenant.jpg" alt="">
                     </div>
-                    <div class="carousel-item" onclick="changeBg('bg-the-the-black-demon.jpeg', 'the-the-black-demon');">
+                    <div class="carousel-item">
                         <img src="/imagens/movies/the-black-demon.jpg" alt="">
                     </div>
-                    <div class="carousel-item" onclick="changeBg('bg-the-tank.jpeg', 'the-tank');">
+                    <div class="carousel-item">
                         <img src="/imagens/movies/the-tank.jpeg" alt="">
                     </div>
                 </div>
@@ -78,10 +68,5 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="/scripts/script.js"></script>
-<script>
-    $(document).ready(function () {
-           $('.carousel').carousel();
-    });
-</script>
 </body>
 </html>
